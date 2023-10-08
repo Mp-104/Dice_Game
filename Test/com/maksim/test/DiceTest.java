@@ -1,7 +1,6 @@
 package com.maksim.test;
 
 import com.Maksim.dice.Dice;
-import com.Maksim.dice.Main;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
