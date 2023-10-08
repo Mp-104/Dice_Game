@@ -1,5 +1,6 @@
 package com.maksim.test;
 
+import com.Maksim.dice.Player;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -7,10 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class PlayerTest {
 
     @Test
-    public void test (){
-        int x= 5;
+    public void playerTest (){
+        Player player = new Player();
 
-        assertEquals(x, 5);
+
+        assertNotNull(player);
     }
 
 

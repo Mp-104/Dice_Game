@@ -4,9 +4,9 @@ package com.Maksim.dice;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
-import java.util.Random;
+
 import java.util.ArrayList;
-import static com.Maksim.dice.Input.input;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
@@ -20,6 +20,7 @@ public class Main {
         // instantiate
 
         Dice dice = new Dice();
+        Input input = new Input();
 
         //Variables
         ArrayList<Player> playerlist = new ArrayList<>();
@@ -27,7 +28,7 @@ public class Main {
 
 
         System.out.println("Välkommen till tärning! Hur många spelar? Ange ett heltal");
-        checkInt();
+        input.checkInt();
         int players = input.nextInt();                            // Variable used for amount of players, used in fori loop later
         System.out.println(players + " Spelare");
 
@@ -36,14 +37,14 @@ public class Main {
 
 
         System.out.println("Hur många rundor? Ange ett heltal");
-        checkInt();                           // Checks for valid input, will loop until valid input is provided
+        input.checkInt();                           // Checks for valid input, will loop until valid input is provided
         int rounds = input.nextInt();                              // Variable used for amount of rounds, used in fori loop later
         System.out.println(rounds + " Rundor");
 
         System.out.println(); // Radbrytning
 
         System.out.println("Hur många tärningar? Ange ett heltal!");
-        checkInt();                            // Checks for valid input, will loop until valid input is provided
+        input.checkInt();                            // Checks for valid input, will loop until valid input is provided
         int dices = input.nextInt();                               // Variable used for amount of dices, used later to in fori loop
         System.out.println(dices + " Tärningar");
 
@@ -133,13 +134,6 @@ public class Main {
 
             }
         }
-    }
-    static void checkInt() {
-        while (!input.hasNextInt()) {                             // Checks for valid input, will loop until valid input is provided
-            System.out.println("Det är inte ett heltal!");
-            input.next();
-        }
-
     }
 
 }
