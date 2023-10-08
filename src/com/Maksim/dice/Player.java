@@ -1,6 +1,6 @@
 package com.Maksim.dice;
 
-public class Player implements Comparable <Player>{  // implements Comparable interface to sort score
+public class Player implements Comparable <Player>{  // implements Comparable interface to sort score   https://www.scaler.com/topics/sort-arraylist-in-java/
     @Override
     public String toString() {
         return "Player{" +

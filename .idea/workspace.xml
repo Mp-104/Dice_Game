@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa2f5e6-9f18-471f-8989-362ab96580f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dice_Game.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/com/maksim/test/PlayerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Dice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dice_Game.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dice_Game.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -26,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2WIcWIRq90F1VcLEC2QlGRdYIMj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -37,10 +40,17 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/mp-10/Desktop/Java/Dice_GameTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +59,51 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.maksim.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Maksim.dice.Main" />
+      <module name="Dice_Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.Maksim.dice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dice_Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maksim.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maksim.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maksim.test.PlayerTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PlayerTest.test" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,7 +112,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1696423567428</updated>
-      <workItem from="1696423568386" duration="312000" />
+      <workItem from="1696423568386" duration="9448000" />
+      <workItem from="1696679082297" duration="26000" />
+      <workItem from="1696685939675" duration="8424000" />
     </task>
     <servers />
   </component>

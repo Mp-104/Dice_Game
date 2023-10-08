@@ -1,8 +1,16 @@
 package com.Maksim.dice;
 
-import java.util.*;
+
+import org.junit.jupiter.api.Test;
+
+import java.util.Collections;
+import java.util.Random;
+import java.util.ArrayList;
+import static com.Maksim.dice.Input.input;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
+
     public static void main(String[] args) {
 
         // amount of players
@@ -11,9 +19,7 @@ public class Main {
 
         // instantiate
 
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
-
+        Dice dice = new Dice();
 
         //Variables
         ArrayList<Player> playerlist = new ArrayList<>();
@@ -21,11 +27,8 @@ public class Main {
 
 
         System.out.println("Välkommen till tärning! Hur många spelar? Ange ett heltal");
-        while (!scanner.hasNextInt()) {                             // Checks for valid input, will loop until valid input is provided
-            System.out.println("Det är inte ett heltal!");
-            scanner.next();
-        }
-        int players = scanner.nextInt();                            // Variable used for amount of players, used in fori loop later
+        checkInt();
+        int players = input.nextInt();                            // Variable used for amount of players, used in fori loop later
         System.out.println(players + " Spelare");
 
 
@@ -33,24 +36,18 @@ public class Main {
 
 
         System.out.println("Hur många rundor? Ange ett heltal");
-        while (!scanner.hasNextInt()) {                              // Checks for valid input, will loop until valid input is provided
-            System.out.println("Det är inte ett heltal!");
-            scanner.next();
-        }
-        int rounds = scanner.nextInt();                              // Variable used for amount of rounds, used in fori loop later
+        checkInt();                           // Checks for valid input, will loop until valid input is provided
+        int rounds = input.nextInt();                              // Variable used for amount of rounds, used in fori loop later
         System.out.println(rounds + " Rundor");
 
         System.out.println(); // Radbrytning
 
         System.out.println("Hur många tärningar? Ange ett heltal!");
-        while (!scanner.hasNextInt()) {                              // Checks for valid input, will loop until valid input is provided
-            System.out.println("Det är inte ett heltal");
-            scanner.next();
-        }
-        int dices = scanner.nextInt();                               // Variable used for amount of dices, used later to in fori loop
+        checkInt();                            // Checks for valid input, will loop until valid input is provided
+        int dices = input.nextInt();                               // Variable used for amount of dices, used later to in fori loop
         System.out.println(dices + " Tärningar");
 
-        scanner.nextLine();   // player1.name = scanner.nextLine(); below was skipped, for some reason, this line prevents that and is skipped instead
+        input.nextLine();   // player1.name = scanner.nextLine(); below was skipped, for some reason, this line prevents that and is skipped instead
 
 
         System.out.println(); // Radbrytning
@@ -61,7 +58,7 @@ public class Main {
             //create Unique players
             System.out.println("Ange namn för spelare " + (i+1 )); // +1 to better represent amount of players
             Player player = new Player ();                        // Creates new player
-            player.name = scanner.nextLine();                     // User names new player
+            player.name = input.nextLine();                     // User names new player
 
             System.out.println("Spelare " + (i+1) + ": " + player.name);
             playerlist.add(player);                                         // Adds new player to ArrayList
@@ -79,7 +76,7 @@ public class Main {
 
         System.out.println(); // Radbrytning
         System.out.println("Tryck enter för att börja spelet");
-        scanner.nextLine();
+        input.nextLine();
         System.out.println(); // radbrytning
 
 
@@ -87,19 +84,19 @@ public class Main {
         for (int i = 0; i < rounds; i++) {   // Loops for the amount of chosen rounds
             System.out.println("Runda " + (i+1) );
             System.out.println("Tryck enter för att fortsätta");
-            scanner.nextLine();
+            input.nextLine();
 
             for (int j = 0; j < playerlist.size(); j++) {  // Loops for each player in the ArrayList
                 System.out.println(playerlist.get(j).name + "'s tur");
                 System.out.println("Tryck enter för att slå tärning");
-                scanner.nextLine();
+                input.nextLine();
 
 
                 for (int k = 0; k < dices; k++) {                 // Loops for amount of chosen dices
-                    int dice = random.nextInt(1,7);  // Simulates dice throw
-                    System.out.println("Tärning " + (k+1) + ": " + dice);
+                    dice.dice();                                  // Simulates dice throw
+                    System.out.println("Tärning " + (k+1) + ": " + dice.dice());
 
-                    playerlist.get(j).score += dice;              // Tallies the score
+                    playerlist.get(j).score += dice.dice();              // Tallies the score
 
                 }
                 System.out.println(playerlist.get(j).name + " har " + playerlist.get(j).score + " poäng!") ;
@@ -113,7 +110,7 @@ public class Main {
 
 
         System.out.println("Tryck enter för en sammanställning av resultatet");
-        scanner.nextLine();
+        input.nextLine();
 
         System.out.println(); // Radbrytning
         System.out.println("Slutresultatet: ");
@@ -137,4 +134,12 @@ public class Main {
             }
         }
     }
+    static void checkInt() {
+        while (!input.hasNextInt()) {                             // Checks for valid input, will loop until valid input is provided
+            System.out.println("Det är inte ett heltal!");
+            input.next();
+        }
+
+    }
+
 }
