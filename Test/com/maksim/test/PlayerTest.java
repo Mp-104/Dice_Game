@@ -13,6 +13,7 @@ class PlayerTest {
 
 
         assertNotNull(player);
+        assertEquals(player.getClass(), Player.class);
     }
 
 

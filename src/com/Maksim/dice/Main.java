@@ -1,13 +1,9 @@
 package com.Maksim.dice;
 
 
-import org.junit.jupiter.api.Test;
-
 import java.util.Collections;
-
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
 
@@ -18,7 +14,6 @@ public class Main {
         // amount of dices
 
         // instantiate
-
         Dice dice = new Dice();
         Input input = new Input();
 
@@ -89,15 +84,15 @@ public class Main {
 
             for (int j = 0; j < playerlist.size(); j++) {  // Loops for each player in the ArrayList
                 System.out.println(playerlist.get(j).name + "'s tur");
-                System.out.println("Tryck enter för att slå tärning");
+                System.out.println("Tryck enter för att slå tärning(ar)");
                 input.nextLine();
 
 
                 for (int k = 0; k < dices; k++) {                 // Loops for amount of chosen dices
-                    dice.dice();                                  // Simulates dice throw
-                    System.out.println("Tärning " + (k+1) + ": " + dice.dice());
+                    dice.roll();                                  // Simulates dice throw
+                    System.out.println("Tärning " + (k+1) + ": " + dice.roll());
 
-                    playerlist.get(j).score += dice.dice();              // Tallies the score
+                    playerlist.get(j).score += dice.roll();              // Tallies the score
 
                 }
                 System.out.println(playerlist.get(j).name + " har " + playerlist.get(j).score + " poäng!") ;
@@ -121,7 +116,7 @@ public class Main {
         Collections.sort(playerlist , Collections.reverseOrder()); // sorts playerlist in reverse order based on int score, implements sorting interface in Player class
 
         for (int i = 0; i < playerlist.size(); i++) {
-            System.out.println(playerlist.get(i).score + " poäng: " + playerlist.get(i).name); // presents players in descending order
+            System.out.println(i+1 + " " + playerlist.get(i).name + ": " + playerlist.get(i).score + " poäng"); // presents players in descending order
         }
         if (playerlist.size() > 1) {  // checks if more than one player present
             if (playerlist.get(0).score == playerlist.get(1).score) {    // Compares top two players based on score

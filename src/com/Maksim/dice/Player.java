@@ -9,7 +9,7 @@ public class Player implements Comparable <Player>{  // implements Comparable in
                 '}';
     }
 
-    String name;
+    public String name;
     int score;
 
     @Override                           // Logic of comparing and sorting after score

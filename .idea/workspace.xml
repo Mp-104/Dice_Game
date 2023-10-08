@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5aa2f5e6-9f18-471f-8989-362ab96580f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Test/com/maksim/test/DiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/com/maksim/test/DiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/maksim/test/DiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/com/maksim/test/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/com/maksim/test/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Dice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Maksim/dice/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Maksim/dice/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +63,7 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.maksim" />
       <recent name="com.maksim.test" />
     </key>
   </component>
@@ -110,6 +112,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Dice_Game" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maksim.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maksim.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maksim.test.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PlayerTest.playerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Dice_Game" />
       <extension name="coverage">
@@ -126,29 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Dice_Game" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.maksim.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.maksim.test" />
-      <option name="MAIN_CLASS_NAME" value="com.maksim.test.PlayerTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.PlayerTest.playerTest" />
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.DiceTest" />
         <item itemvalue="JUnit.DiceTest.diceTest" />
-        <item itemvalue="JUnit.PlayerTest.test" />
+        <item itemvalue="JUnit.PlayerTest.playerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +163,7 @@
       <updated>1696423567428</updated>
       <workItem from="1696423568386" duration="9448000" />
       <workItem from="1696679082297" duration="26000" />
-      <workItem from="1696685939675" duration="11760000" />
+      <workItem from="1696685939675" duration="15247000" />
     </task>
     <servers />
   </component>

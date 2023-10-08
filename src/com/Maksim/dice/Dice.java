@@ -4,10 +4,9 @@ import java.util.Random;
 
 public class Dice {
 
-    public int dice(){
+    public int roll(){
         Random random = new Random();
-        int dice = random.nextInt(1,7);
-        return dice;
+        return random.nextInt(1,7);
 
     }
 
